@@ -6,7 +6,9 @@ function getIt() {
 }
 
 function frameIt() {
-
+  $('img').on('load', function() {
+    $('img').attr('class','tasty');
+  });
 }
 
 function pressIt() {
@@ -18,7 +20,6 @@ function submitIt() {
 }
 
 $(document).ready(function(){
-
 // call functions here
   getIt();
 });
